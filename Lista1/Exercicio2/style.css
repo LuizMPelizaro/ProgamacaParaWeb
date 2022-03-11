@@ -1,0 +1,9 @@
+.container{
+    width: 380px;
+    border: 4px black solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    margin-left: 5px;
+}

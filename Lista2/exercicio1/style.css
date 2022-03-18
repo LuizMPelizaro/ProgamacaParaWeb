@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    height: 92vh;
+}
+.header {
+    width: 100%;
+    background-color: #E5C295;
+    color: black;
+    height: 8vh;
+    text-align: center;
+}
+
+.col-1 {
+    width: 34%;
+    background-color: #634F40;
+    color: black;
+    float: left;
+    text-align: justify;
+
+}
+
+.col-2 {
+    width: 33%;
+    background-color: #A1A9B5;
+    color: black;
+    text-align: justify;
+    float: left;
+}
+
+
+
+
+.col-3 {
+    width: 33%;
+    background-color: #1A1A1C;
+    color: white;
+    text-align: justify;
+    float: left;
+}
+
+.skills{
+    margin: 20px;
+}
+.title{
+    text-align: center;
+}
+.experience{
+    margin: 5px;
+}
+.experience_title{
+    margin: 5px;
+}
+.experience_last_line{
+    margin: 10px;
+}

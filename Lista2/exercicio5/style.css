@@ -1,0 +1,21 @@
+
+.container{
+    width: 45%;
+    text-align: center;
+    position: fixed;
+}
+p{
+    top:800px;
+    width: 400px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+table, td, tr, th {
+    border: solid black 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    width: 400px;
+}

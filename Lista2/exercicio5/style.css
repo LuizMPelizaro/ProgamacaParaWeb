@@ -1,21 +1,42 @@
-
-.container{
+.container {
     width: 45%;
     text-align: center;
     position: fixed;
 }
-p{
-    top:800px;
-    width: 400px;
+
+ul {
     font-style: italic;
-    font-weight: bold;
+    text-align: justify;
 }
 
 table, td, tr, th {
     border: solid black 1px;
-    border-collapse: collapse;
+    border-collapse: unset;
     text-align: center;
 }
-table{
+thead{
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+table {
     width: 400px;
+}
+.region,.state{
+    text-align: left;
+}
+.line_1 {
+    list-style-type: unset;
+}
+
+.line_2 {
+    list-style-type: decimal;
+}
+
+.line_3 {
+    list-style-type: circle;
+}
+
+.line_4 {
+    list-style-type: upper-roman;
 }

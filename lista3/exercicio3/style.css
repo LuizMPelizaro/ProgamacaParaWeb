@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.4fr 0.5fr 2.7fr 0.5fr 1.6fr;
+    grid-auto-columns: 1fr;
+    gap:10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header Header"
+    "side-bar Dashboard"
+    "side-bar menu"
+    "side-bar projects"
+    "side-bar table";
+}
+
+.Header {
+    grid-area: Header;
+    background-color: black;
+    padding: 10px;
+}
+
+.title-header {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.header-link {
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+
+.search {
+    border-radius: 7px;
+    background-color: #A1A9B5;
+    border-color: #A1A9B5;
+    color: #e1e1e1;
+}
+
+.user {
+    color: white;
+    margin-left: 80vh;
+}
+
+.login {
+    color: white;
+    margin-left: 3vh;
+}
+
+.Dashboard {
+    grid-area: Dashboard;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #bdbdbd;
+    border-radius: 20px;
+}
+
+.title-menu, .text-menu, .button-start {
+    margin-left: 10vh;
+}
+
+.text-menu {
+    font-size: 19px;
+}
+
+.button-start, .button-no {
+    padding: 12px 28px;
+    border-radius: 2vh;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button-start {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+
+.button-no {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.header-tr {
+    font-weight: bold;
+    font-size: 30px;
+    width: 50vh;
+}
+
+.text-tr {
+    font-size: 20px;
+    color: #949494;
+}
+
+.table {
+    grid-area: table;
+
+}
+#Activity{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Activity, #Activity tr, #Activity td, #Activity th {
+    border: solid #949494 1px;
+    border-collapse: collapse;
+    padding: 3px;
+    text-align: left;
+}
+
+.sub_title_table {
+    font-weight: bold;
+}
+
+#Activity tr:nth-child(even){background-color: #f2f2f2;}
+
+#Activity tr:hover {background-color: #ddd;}
+
+#Activity td {
+    width: 20vmax;
+    height: 1.5vmax;;
+}
+
+.side-bar {
+    grid-area: side-bar
+}
+
+dl{
+    background-color: #eaeaea;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+dd{
+    margin:20px;
+}
+dt{
+    color: #9a9a9a;
+}

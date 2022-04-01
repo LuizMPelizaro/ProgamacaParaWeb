@@ -2,13 +2,55 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
 .menu {
     grid-area: 2 / 2 / 5 / 5;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rebeccapurple;
 }
-div{
-    display:inline-grid;
+h1{
+    color: white;
 }
+div {
+    display: inline-grid;
+}
+.head{
+    background-image: url("https://picsum.photos/1200/150");
+}
+label {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search {
+    width: 20vw;
+    height: 5vh;
+}
+
+.message {
+    width: 20vw;
+    height: 20vh;
+}
+
+.button{
+    margin-left: 37.5%;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 50px;
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+    margin-bottom: 20px;
+}
+::placeholder {
+    font-size: 1.4vw;
+    text-align: left;
+
+}
+

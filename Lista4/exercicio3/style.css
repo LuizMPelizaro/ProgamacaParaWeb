@@ -8,7 +8,47 @@
 
 .menu {
     grid-area: 2 / 2 / 5 / 5;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
 }
 div{
     display:inline-grid;
+    text-align: center;
+}
+p{
+    margin-left: 32.6%;
+    font-size: 1.5vw;
+
+}
+h1{
+    margin-left: 32.6%;
+    font-size: 2vw;
+    font-weight: normal;
+}
+.menu{
+   text-align:  left;
+}
+
+label{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.information{
+    height: 5vh;
+    width: 53vw;
+}
+.message{
+    height: 20vh;
+    width: 53vw;
+}
+.button{
+    margin-left: 2.5vw;
+    width: 53vw;
+    height: 5vh;
+    background-color: green;
+    border-color: green;
+    margin-bottom: 20px;
 }

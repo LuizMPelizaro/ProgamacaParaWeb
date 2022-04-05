@@ -9,6 +9,19 @@
 .menu {
     grid-area: 2 / 2 / 5 / 5;
 }
-div{
-    display:inline-grid;
+
+div {
+    margin: 10px;
+}
+
+label{
+    margin-left: 20px;
+}
+
+input{
+    margin-left: 20px;
+}
+
+.state {
+    display: inline-block;
 }

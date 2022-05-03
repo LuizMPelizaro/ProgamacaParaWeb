@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.card {
+    grid-area: 2 / 2 / 4 / 4;
+    border: 1px solid black;
+    text-align: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+#logo_span{
+    display: none;
+}
+
+#company_span{
+    display: none;
+}
+
+#image_person_span{
+    display: none;
+}
+
+#name_span{
+    display: none;
+}
+#role_span{
+    display: none;
+}

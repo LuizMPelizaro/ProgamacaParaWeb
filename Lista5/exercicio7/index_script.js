@@ -1,5 +1,4 @@
 var nome = ["Luiz", "Pelizaro", "Josnei", "Santo", "Chalim", "Ednaldo", "Pereira", "Edevair", "Biel", "Antedguemon"]
-console.log(nome[1])
 
 document.getElementById('add_line').onclick = () => {
     let table_html = document.querySelector('table')

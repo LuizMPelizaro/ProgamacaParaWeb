@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    text-align: center;
+    background-color: gainsboro;
+  }
+  .nomes {
+    font-size: 32px;
+  }
+  .numeros {
+    font-size: 25px;
+  }
+  div#row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  span {
+    padding: 2px;
+  }
+  div#container {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px gray;
+    margin: 5% auto 10px;
+    padding: 5px;
+  }

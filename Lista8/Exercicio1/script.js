@@ -8,7 +8,7 @@ function next_pokemon(){
     loadpokemon();
 }
 function early_pokemon(){
-    if(poke_id == 1){
+    if(poke_id === 1){
         alert("Erro");
     }else{
     poke_id--;
@@ -25,6 +25,7 @@ function loadpokemon() {
             console.table(data);
             document.getElementById("numero").innerHTML = data.id;
             let nome = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+            alert(nome)
             document.getElementById("nome").innerHTML = nome;
             document.getElementById("pic").setAttribute("src", data.sprites.front_default);
             let tipos = '';
@@ -37,7 +38,7 @@ function loadpokemon() {
             //Verificar os erros
             console.error('Error:', error);
         });
-};
+}
 
 
 

@@ -16,7 +16,6 @@ add_task.onclick = () => {
                         </span>
                     </td>
                 </tr>`;
-    console.log(table)
 
     if (get_text === "") {
         alert("Texto invalido");
@@ -40,7 +39,7 @@ delete_task = (e) => {
 
 sublime_task = (e) => {
     let sublimed = e.nextElementSibling.style.textDecoration;
-    if(sublimed === "line-through")
+    if (sublimed === "line-through")
         e.nextElementSibling.style.textDecoration = "none"
     else
         e.nextElementSibling.style.textDecoration = "line-through"

@@ -1,19 +1,17 @@
 const http_request = "https://pokeapi.co/api/v2/pokemon/";
 let randpoke;
-let array_card_player = [];
-let array_poke_gen = [];
+const array_card_player = [];
+const array_poke_gen = [];
 let pokemons = 151;
-let img = document.createElement('img');
-let time = 5000;
+const img = document.createElement('img');
+const TIME = 5000;
 let raffle_timer;
 let start = false;
 
 const btn_start = document.getElementById('btn_start');
 const btn_bingo = document.getElementById('check_player_one');
 
-function rand_poke() {
-    return Math.floor(Math.random() * 152) + 1;
-}
+const rand_poke = () => Math.floor(Math.random() * pokemons) + 1;
 
 function generate_card(i) {
     const card_poke_player = document.querySelector('#card_poke_player');
@@ -22,7 +20,10 @@ function generate_card(i) {
         .then(data => {
             let div = document.createElement('div');
             let img = document.createElement('img');
-            div.setAttribute("id",`${i}`);
+            div.setAttribute("id", `${i}`);
+            div.addEventListener("click", () => {
+                div.classList.toggle("poke_card");
+            })
             img.setAttribute("src", `${data.sprites.front_default}`);
             div.appendChild(img);
             card_poke_player.appendChild(div);
@@ -35,7 +36,6 @@ function rand_card_generator() {
         .then(response => response.json())
         .then(data => {
             let div = document.createElement('div');
-
             if (img.src === "") {
                 img.setAttribute("src", `${data.sprites.front_default}`);
                 div.appendChild(img);
@@ -84,9 +84,9 @@ function bingo() {
 
 btn_bingo.addEventListener("click", bingo);
 btn_start.onclick = () => {
-    if(start === false){
+    if (start === false) {
         generate_cards();
-        raffle_timer = setInterval(raffle_poke, time);
+        raffle_timer = setInterval(raffle_poke, TIME);
     }
     start = true;
 }

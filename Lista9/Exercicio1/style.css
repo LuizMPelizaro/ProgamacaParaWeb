@@ -35,5 +35,10 @@
     margin: 10px;
     text-align: justify;
     line-height: 25px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
 
+.poke_card{
+    background-color: black !important;
 }
